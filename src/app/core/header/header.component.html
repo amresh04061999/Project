@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <div class="">
+      <a class="navbar-brand fs-3 d-block d-sm-none"><span class="bi bi-justify"></span></a>
+    </div>
+    <div>
+      <a class="navbar-brand fs-3 logo d-none d-sm-block"><span class="text-primary">wel</span> come</a>
+    </div>
+    <div class="navbar-search flex-grow-1 flex-sm-grow-0 justify-content-center d-flex align-items-center">
+      <div class="position-relative">
+        <input type="text" placeholder="Search" class="search-input rounded-pill">
+        <span class="voice-icon bi bi-mic fs-6"></span>
+        <span class="search-icon bi bi-search fs-6"></span>
+      </div>
+    </div>
+    <div class=" align-items-center d-none d-sm-flex">
+      <div class="me-3" (click)="isOpen = !isOpen" cdkOverlayOrigin #trigger="cdkOverlayOrigin"> <span
+          class="bi bi-activity ba-2  fs-3"></span></div>
+      <div class="me-3"> <span class="bi bi-chat-left-text-fill ba-2  fs-3"></span></div>
+      <div class="me-3"> <span class="bi bi-calendar3 ba-2  fs-3"></span></div>
+      <div class="me-3" (click)="isOpen = !isOpen" cdkOverlayOrigin #trigger="cdkOverlayOrigin"> <span
+          class="bi bi-person-circle ba-2  fs-3">
+        </span>
+      </div>
+    </div>
+  </div>
+  <!-- This template displays the overlay content and is connected to the button -->
+  <ng-template cdkConnectedOverlay [cdkConnectedOverlayOrigin]="trigger" [cdkConnectedOverlayOpen]="isOpen">
+    <ul class="example-list p-2">
+      <li>Manage Profile <span>></span></li>
+      <li>Manage Studio Profile <span>></span></li>
+      <li (click)="logout()">Logout</li>
+    </ul>
+  </ng-template>
+</nav>
