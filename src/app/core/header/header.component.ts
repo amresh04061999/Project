@@ -6,9 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  isOpen = false;
-  menu:boolean=false;
-  constructor() { }
+  public isOpen = false;
+  public menu: boolean = false;
+
+  constructor() {
+
+  }
+
 
   ngOnInit(): void {
   }
@@ -16,7 +20,7 @@ export class HeaderComponent implements OnInit {
     // localStorage.clear();
     // this.route.navigate(['/login'])
   }
- public  opneMenu() {
-  this.menu =! this.menu
- }
+  public opneMenu() {
+    this.menu = !this.menu
+  }
 }

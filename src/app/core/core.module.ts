@@ -7,6 +7,11 @@ import { RegistrationComponent } from './registration/registration.component';
 import { ForgetPasswordComponent } from './forget-password/forget-password.component';
 import { CreateNewPasswordComponent } from './create-new-password/create-new-password.component';
 import { RouterModule } from '@angular/router';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatCardModule } from '@angular/material/card';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatFormFieldModule } from '@angular/material/form-field';
+
 
 
 @NgModule({
@@ -20,8 +25,13 @@ import { RouterModule } from '@angular/router';
   imports: [
     CommonModule,
     OverlayModule,
-    RouterModule
+    RouterModule,
+    MatDatepickerModule,
+    MatCardModule,
+    MatNativeDateModule,
+    MatFormFieldModule,
+
   ],
-  exports: [HeaderComponent,RegistrationComponent,LoginComponent]
+  exports: [HeaderComponent, RegistrationComponent, LoginComponent]
 })
 export class CoreModule { }
