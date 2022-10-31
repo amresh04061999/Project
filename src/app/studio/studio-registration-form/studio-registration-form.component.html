@@ -1,0 +1,145 @@
+<section class="h-100 ">
+    <div class="container-fluid ">
+        <h3 class="text-center " ><span class="text-danger">1</span>Rhythm</h3>
+        <h1 class=" text-nowrap text-center">Register Studio</h1>
+          <form >
+            <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1  align-items-center">
+            <!-- Email input -->
+            <div class="form-outline">
+                <label class="form-label" for="sname">Studio Name <span class="text-danger">*</span></label>
+              <input type="text" id="sname" class="form-control form-control-lg"
+                placeholder="Enter Your Studio Name" formControlName="sname"/>
+            </div>
+             <!-- Email input -->
+             <div class="form-outline">
+                <label class="form-label" for="saddress">Studio Addess <span class="text-danger">*</span></label>
+              <input type="email" id="saddress" class="form-control form-control-lg"
+                placeholder="Enter Studio address" formControlName="saddress"/>
+            </div>
+            <div class="row"> 
+              <div class="col-lg-6 mt-3"> 
+                  <label class="form-label" for="state">Select State<span class="text-danger">*</span>
+                   </label>
+                   <select class="form-select" formControlName="state">
+                  <option selected>--- State ---</option>
+                  <option value="Daman">Daman</option>
+                  <option value="Gujarat">Gujarat</option>
+                  <option value="UP">UP</option>
+                </select>
+              </div>
+                <div class="col-lg-6 mt-3">
+                  <label class="form-label" for="city">Select City<span class="text-danger">*</span> </label>
+                  <select class="form-select" formControlName="city">
+                  <option selected>--- City ---</option>
+                  <option value="Daman">Daman</option>
+                  <option value="Gujarat">Gujarat</option>
+                  <option value="UP">UP</option>
+                </select></div>  
+          </div>
+           <!-- Select Service Ofered  type  -->
+           <label class="form-label mt-3" for="password">Select Service Ofered <span class="text-danger ">*</span> </label>
+           <select class="form-select " aria-label="Default select example" formControlName="usertype">
+               <option selected>Select User Type</option>
+               <option value="Studio"> owner</option>
+               <option value="Artist">Artist</option>
+               <option value="General">General</option>
+             </select> 
+          <div class="form-outline">
+            <label class="form-label " for="password">Add Studio Image <span class="text-danger ">*</span> </label>
+            <input type="file" class="form-control" formControlName="profile_image">
+          </div>
+           
+        </div>
+        <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1  align-items-center">
+        <!-- Studio Description input -->
+        <div class="form-outline">
+            <label class="form-label" for="sdescription">Studio Description <span class="text-danger">*</span></label>
+          <input type="text" id="sdescription" class="form-control form-control-lg"
+            placeholder="Enter Studio Description"  formControlName="sdescription" />
+        </div>
+         <!-- Hardware and Equipments details input -->
+         <div class="form-outline">
+          <label class="form-label" for="sdetails">Hardware and Equipments details <span class="text-danger">*</span></label>
+        <input type="text" id="sdetails" class="form-control form-control-lg"
+          placeholder="Enter Hardware and Equipments details"  formControlName="sdetails" />
+      </div>
+      <div class="row">
+        <div class="col-lg-4 mt-3"> 
+          <label class="form-label text-nowrap " for="state">Select Studio Days  <span class="text-danger">*</span></label>
+        </div>
+        <div class="col-lg-4 mt-3"> 
+            <label class="form-label" for="state">From<span class="text-danger">*</span>
+             </label>
+             <select class="form-select" formControlName="state">
+            <option selected>--- Day ---</option>
+            <option value="Sunday">Sunday</option>
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="UP">Wedneshday</option>
+            <option value="Wedneshday">Thursday</option>
+            <option value="Friday">Friday</option>
+            <option value="Saturday">Saturday</option>
+          </select>
+        </div>
+          <div class="col-lg-4 mt-3">
+            <label class="form-label" for="city">To<span class="text-danger">*</span> </label>
+            <select class="form-select" formControlName="city">
+            <option selected>--- Day ---</option>
+            <option value="Sunday">Sunday</option>
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="UP">Wedneshday</option>
+            <option value="Wedneshday">Thursday</option>
+            <option value="Friday">Friday</option>
+            <option value="Saturday">Saturday</option>
+          </select>
+        </div>  
+          
+    </div>
+    <div class="row">
+      <div class="col-lg-4 mt-3"> 
+        <label class="form-label text-nowrap " for="state">Select Studio Hours <span class="text-danger">*</span></label>
+      </div>
+      <div class="col-lg-4 mt-3"> 
+          <label class="form-label" for="state">From<span class="text-danger">*</span>
+           </label>
+           <select class="form-select" formControlName="state">
+          <option selected>--- State ---</option>
+          <option value="Daman">Daman</option>
+          <option value="Gujarat">Gujarat</option>
+          <option value="UP">UP</option>
+        </select>
+      </div>
+        <div class="col-lg-4 mt-3">
+          <label class="form-label " for="city">To<span class="text-danger">*</span> </label>
+          <select class="form-select" formControlName="city">
+          <option selected>--- City ---</option>
+          <option value="Daman">Daman</option>
+          <option value="Gujarat">Gujarat</option>
+          <option value="UP">UP</option>
+        </select></div>  
+        <!-- Hardware and Equipments details input -->
+        <div class="form-outline">
+          <label class="form-label" for="sdetails">Event Rates  <span class="text-danger">*</span></label>
+        <input type="text" id="sdetails" class="form-control form-control-lg"
+          placeholder="Enter Event Rates* "  formControlName="sdetails" />
+      </div>
+  </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 my-4">
+            <div class="d-flex justify-content-center align-items-cente mt-3">
+             <div class="text-center text-lg-start">
+               <button type="submit" class="btn btn-success ">Submit</button>
+             </div> 
+           </div>
+           
+        </div>
+    </div>
+     
+</div>
+</form>
+   
+    </div>
+  </section>
