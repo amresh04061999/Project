@@ -11,20 +11,20 @@ export class RegistrationComponent implements OnInit {
   constructor() {
     this.icon = 'eye-slash';
     this.type = 'password';
-   }
+  }
 
   ngOnInit(): void {
   }
-/**
-   * password hide and show feature 
-   */
- onEyeClick() {
-  if (this.icon === 'eye-slash') {
-    this.icon = 'eye';
-    this.type = 'text';
-  } else {
-    this.icon = 'eye-slash';
-    this.type = 'password';
-  }
-};
+  /**
+     * password hide and show feature
+     */
+  onEyeClick() {
+    if (this.icon === 'eye-slash') {
+      this.icon = 'eye';
+      this.type = 'text';
+    } else {
+      this.icon = 'eye-slash';
+      this.type = 'password';
+    }
+  };
 }
