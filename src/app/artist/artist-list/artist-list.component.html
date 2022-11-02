@@ -1,9 +1,10 @@
 <section class="h-100 ">
-    <div class="container-fluid ">
+    <div class="container-fluid mb-5">
         <div class="row d-flex justify-content-center align-items-center ">
             <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1 ">
                 <h3 class="text-center "><span>Studios </span><span> | </span><span> Artist</span></h3>
-
+                <!-- <pagination-controls (pageChange)="p = $event" ></pagination-controls> --> 
+                 <!-- pager -->
                 <div class="d-flex mt-3">
                     <span class="text-nowrap me-2 mt-1">Filter By:</span>
                     <div class="row">
@@ -37,52 +38,39 @@
                                 </select>
                             </div>
                         </div>
-
                     </div>
-
                 </div>
-               
             </div>
         </div>
-           
-                    <div class="row  my-5 h-100 d-flex justify-content-center align-items-center  ">
-                        <div class="col-lg-3  col-md-6  col-sm-6  col-12">
-                            <div class="card" style="width: 18rem;">
-                                <img src="https://mdbootstrap.com/img/new/standard/city/041.webp" width="250px" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                </div>
-                              </div>
+        <div class="row  my-5 h-100 ">
+            
+                <div class="col-lg-4 col-md-6  col-sm-6  col-12 d-flex  justify-content-center  mt-4"*ngFor="let data of pagedItems ">
+                    <!-- | paginate: { itemsPerPage: 3, currentPage: p } -->
+                    <div class="card" style="width: 18rem;">
+                        <img [src]="data.image_paths" width="250px" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <p class="card-text">{{data.title}}</p>
                         </div>
-                        <div class="col-lg-3   col-md-6  col-sm-6  col-12">
-                            <div class="card" style="width: 18rem;">
-                                <img src="https://mdbootstrap.com/img/new/standard/city/041.webp" width="250px" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                </div>
-                              </div>
-                            
-                        </div>
-                        <div class="col-lg-3   col-md-6  col-sm-6 col-12">
-                            <div class="card" style="width: 18rem;">
-                                <img src="https://mdbootstrap.com/img/new/standard/city/041.webp" width="250px" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                </div>
-                              </div>
-                            
-                        </div>
-                        <div class="col-lg-3 col-md-6  col-sm-6  col-12">
-                            <div class="card" style="width: 18rem;">
-                                <img src="https://mdbootstrap.com/img/new/standard/city/041.webp" width="250px" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                </div>
-                              </div>
-                           
-                        </div>
-
                     </div>
-
+                </div>
+        </div>
+        <ul  class="pagination justify-content-center mb-5">
+            <!-- <li class="page-item" [ngClass]="{disabled:pager.currentPage === 1}">
+                <a class="page-link" (click)="setPage(1)">First</a>
+            </li> -->
+            <li class="page-item mb-5" [ngClass]="{disabled:pager.currentPage === 1}">
+                <a class="page-link" (click)="setPage(pager.currentPage - 1)"><span class="bi bi-caret-left-fill"></span></a>
+            </li>
+            <li  class="page-item"*ngFor="let page of pager.pages" [ngClass]="{active:pager.currentPage === page}">
+                <a class="page-link" (click)="setPage(page)">{{page}}</a>
+            </li>
+            <li  class="page-item ms-4" [ngClass]="{disabled:pager.currentPage === pager.totalPages}">
+                <a class="page-link" (click)="setPage(pager.currentPage + 1)"><span class="bi bi-caret-right-fill"></span></a>
+            </li>
+            <!-- <li  class="page-item"[ngClass]="{disabled:pager.currentPage === pager.totalPages}">
+                <a class="page-link" (click)="setPage(pager.totalPages)">Last</a>
+            </li> -->
+        </ul>
     </div>
 </section>
