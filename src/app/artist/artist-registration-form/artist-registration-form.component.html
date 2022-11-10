@@ -1,205 +1,200 @@
 <section class="h-100 ">
-    <div class="container-fluid ">
-        <h3 class="text-center "><span class="text-danger">1</span>Rhythm</h3>
-        <h1 class=" text-nowrap text-center">Register Artist </h1>
-        <form>
-            <div class="row d-flex justify-content-center align-items-center h-100">
-                <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1  align-items-center">
-                    <!-- Email input -->
-                    <div class="form-outline">
-                        <label class="form-label" for="aname">Artist Name <span class="text-danger">*</span></label>
-                        <input type="text" id="aname" class="form-control form-control-lg"
-                            placeholder="Enter Your Artist Name" formControlName="aname" />
-                    </div>
-                    <div class="mt-2">
-                        <label class="form-label" for="state">Artist Type<span class="text-danger">*</span>
-                        </label>
-                        <select class="form-select" formControlName="state">
-                            <option selected>--- Select Artist Type ---</option>
-                            <option value="Daman">Daman</option>
-                            <option value="Gujarat">Gujarat</option>
-                            <option value="UP">UP</option>
-                        </select>
-                    </div>
-                    <div class="d-flex mt-3">
-                        <h6>Available for events? </h6>
-                        <div class="form-check mx-4">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                            <label class="form-check-label" for="flexRadioDefault1">
-                                Yes
-                            </label>
-                        </div>
-                        <div class="form-check mx-4">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
-                                checked>
-                            <label class="form-check-label" for="flexRadioDefault2">
-                                No
-                            </label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-4 mt-3">
-                            <label class="form-label text-nowrap " for="state">Event Days <span
-                                    class="text-danger">*</span></label>
-                        </div>
-                        <div class="col-lg-4 mt-3">
-                            <label class="form-label" for="state">From<span class="text-danger">*</span>
-                            </label>
-                            <select class="form-select" formControlName="state">
-                                <option selected>--- Day ---</option>
-                                <option value="Sunday">Sunday</option>
-                                <option value="Monday">Monday</option>
-                                <option value="Tuesday">Tuesday</option>
-                                <option value="UP">Wedneshday</option>
-                                <option value="Wedneshday">Thursday</option>
-                                <option value="Friday">Friday</option>
-                                <option value="Saturday">Saturday</option>
-                            </select>
-                        </div>
-                        <div class="col-lg-4 mt-3">
-                            <label class="form-label" for="city">To<span class="text-danger">*</span> </label>
-                            <select class="form-select" formControlName="city">
-                                <option selected>--- Day ---</option>
-                                <option value="Sunday">Sunday</option>
-                                <option value="Monday">Monday</option>
-                                <option value="Tuesday">Tuesday</option>
-                                <option value="UP">Wedneshday</option>
-                                <option value="Wedneshday">Thursday</option>
-                                <option value="Friday">Friday</option>
-                                <option value="Saturday">Saturday</option>
-                            </select>
-                        </div>
 
-                    </div>
-                    <!-- Hardware and Equipments details input -->
-                    <div class="form-outline mt-2">
-                        <label class="form-label" for="sdetails">Event Rates per event <span
-                                class="text-danger">*</span></label>
-                        <input type="text" id="sdetails" class="form-control form-control-lg"
-                            placeholder="Enter Event Rates* " formControlName="sdetails" />
-                    </div>
-                    <div class="form-outline mt-2">
-                        <label class="form-label " for="password">Add Studio Image <span class="text-danger ">*</span>
-                        </label>
-                        <input type="file" class="form-control" formControlName="profile_image">
-                    </div>
+  <div class="container-fluid ">
+    <h3 class="text-center "><span class="text-danger">1</span>Rhythm</h3>
+    <h1 class=" text-nowrap text-center">Register Artist </h1>
+    <form>
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1  align-items-center">
+          <!-- Email input -->
+          <div class="form-outline">
+            <label class="form-label" for="aname">Artist Name <span class="text-danger">*</span></label>
+            <input type="text" id="aname" class="form-control form-control-lg" placeholder="Enter Your Artist Name"
+              formControlName="aname" />
+          </div>
+          <div class="mt-2">
+            <label class="form-label" for="state">Artist Type<span class="text-danger">*</span>
+            </label>
+            <select class="form-select" formControlName="state">
+              <option selected>--- Select Artist Type ---</option>
+              <option value="Daman">Daman</option>
+              <option value="Gujarat">Gujarat</option>
+              <option value="UP">UP</option>
+            </select>
+          </div>
+          <div class="d-flex mt-3">
+            <h6>Available for events? </h6>
+            <div class="form-check mx-4">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault1">
+                Yes
+              </label>
+            </div>
+            <div class="form-check mx-4">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+              <label class="form-check-label" for="flexRadioDefault2">
+                No
+              </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 mt-3">
+              <label class="form-label text-nowrap " for="state">Event Days <span class="text-danger">*</span></label>
+            </div>
+            <div class="col-lg-4 mt-3">
+              <label class="form-label" for="state">From<span class="text-danger">*</span>
+              </label>
+              <select class="form-select" formControlName="state">
+                <option selected>--- Day ---</option>
+                <option value="Sunday">Sunday</option>
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="UP">Wedneshday</option>
+                <option value="Wedneshday">Thursday</option>
+                <option value="Friday">Friday</option>
+                <option value="Saturday">Saturday</option>
+              </select>
+            </div>
+            <div class="col-lg-4 mt-3">
+              <label class="form-label" for="city">To<span class="text-danger">*</span> </label>
+              <select class="form-select" formControlName="city">
+                <option selected>--- Day ---</option>
+                <option value="Sunday">Sunday</option>
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="UP">Wedneshday</option>
+                <option value="Wedneshday">Thursday</option>
+                <option value="Friday">Friday</option>
+                <option value="Saturday">Saturday</option>
+              </select>
+            </div>
 
-                </div>
-                <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1  align-items-center">
-                    <!-- Artist Description input -->
-                    <div class="form-outline">
-                        <label class="form-label" for="adescription">Artist Description <span
-                                class="text-danger">*</span></label>
-                        <input type="text" id="adescription" class="form-control form-control-lg"
-                            placeholder="Enter Artist Description" formControlName="adescription" />
-                    </div>
-                    <div class="mt-2">
-                        <label class="form-label" for="state">Performance Type <span class="text-danger">*</span>
-                        </label>
-                        <select class="form-select" formControlName="state">
-                            <option selected>--- Select Performance Type ---</option>
-                            <option value="Daman">Daman</option>
-                            <option value="Gujarat">Gujarat</option>
-                            <option value="UP">UP</option>
-                        </select>
-                    </div>
-                    <div class="d-flex mt-3">
-                        <label class="form-label" for="sdetails">Available for Music Classes? <span
-                                class="text-danger">*</span></label>
-                        <div class="form-check mx-4">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                            <label class="form-check-label" for="flexRadioDefault1">
-                                Yes
-                            </label>
-                        </div>
-                        <div class="form-check mx-4">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
-                                checked>
-                            <label class="form-check-label" for="flexRadioDefault2">
-                                No
-                            </label>
-                        </div>
-                    </div>
+          </div>
+          <!-- Hardware and Equipments details input -->
+          <div class="form-outline mt-2">
+            <label class="form-label" for="sdetails">Event Rates per event <span class="text-danger">*</span></label>
+            <input type="text" id="sdetails" class="form-control form-control-lg" placeholder="Enter Event Rates* "
+              formControlName="sdetails" />
+          </div>
+          <div class="form-outline mt-2">
+            <label class="form-label " for="password">Add Studio Image <span class="text-danger ">*</span>
+            </label>
+            <input type="file" class="form-control" formControlName="profile_image">
+          </div>
 
-                    <div class="row">
-                        <label class="form-label" for="sdetails">Duartion for music class <span
-                                class="text-danger">*</span></label>
-                        <div class="col-lg-4 mt-3">
-                            <label class="form-label" for="state">From<span class="text-danger">*</span>
-                            </label>
-                            <select class="form-select" formControlName="state">
-                                <option selected>--- State ---</option>
-                                <option value="Daman">Daman</option>
-                                <option value="Gujarat">Gujarat</option>
-                                <option value="UP">UP</option>
-                            </select>
-                        </div>
-                        <div class="col-lg-4 mt-3">
-                            <label class="form-label " for="city">To<span class="text-danger">*</span> </label>
-                            <select class="form-select" formControlName="city">
-                                <option selected>--- City ---</option>
-                                <option value="Daman">Daman</option>
-                                <option value="Gujarat">Gujarat</option>
-                                <option value="UP">UP</option>
-                            </select>
-                        </div>
-                        <div class="col-lg-4">
-                            <!-- Hardware and Equipments details input -->
-                            <div class="form-outline mt-5">
-                                <input type="text" id="sdetails" class="form-control "
-                                    placeholder="Enter no. of class per month* " formControlName="sdetails" />
-                            </div>
-                        </div>
+        </div>
+        <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1  align-items-center">
+          <!-- Artist Description input -->
+          <div class="form-outline">
+            <label class="form-label" for="adescription">Artist Description <span class="text-danger">*</span></label>
+            <input type="text" id="adescription" class="form-control form-control-lg"
+              placeholder="Enter Artist Description" formControlName="adescription" />
+          </div>
+          <div class="mt-2">
+            <label class="form-label" for="state">Performance Type <span class="text-danger">*</span>
+            </label>
+            <select class="form-select" formControlName="state">
+              <option selected>--- Select Performance Type ---</option>
+              <option value="Daman">Daman</option>
+              <option value="Gujarat">Gujarat</option>
+              <option value="UP">UP</option>
+            </select>
+          </div>
+          <div class="d-flex mt-3">
+            <label class="form-label" for="sdetails">Available for Music Classes? <span
+                class="text-danger">*</span></label>
+            <div class="form-check mx-4">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault1">
+                Yes
+              </label>
+            </div>
+            <div class="form-check mx-4">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+              <label class="form-check-label" for="flexRadioDefault2">
+                No
+              </label>
+            </div>
+          </div>
 
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-6  mt-2">
-                            <div class="mt-2">
-                                <label class="form-label" for="state">Classes Type<span class="text-danger">*</span>
-                                </label>
-                                <select class="form-select" formControlName="state">
-                                    <option selected>Select Classes Type</option>
-                                    <option value="Daman">Daman</option>
-                                    <option value="Gujarat">Gujarat</option>
-                                    <option value="UP">UP</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                             <!-- Hardware and Equipments details input -->
-                             <div class="form-outline mt-5">
-                                <input type="text" id="sdetails" class="form-control "
-                                    placeholder="Enter no. of class per month* " formControlName="sdetails" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-6 mt-2 ">
-                            <label class="form-label " for="city">Address<span class="text-danger">*</span> </label>
-                             <div class="form-outline ">
-                                <input type="textarea" id="sdetails" class="form-control "
-                                    placeholder="Enter no. of class per month* " formControlName="sdetails" />
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="row">
-                    <div class="col-lg-12 my-4">
-                        <div class="d-flex justify-content-center align-items-cente mt-3">
-                            <div class="text-center text-lg-start">
-                                <button type="submit" class="btn btn-success ">Submit</button>
-                            </div>
-                        </div>
+          <div class="row">
+            <label class="form-label" for="sdetails">Duartion for music class <span class="text-danger">*</span></label>
+            <div class="col-lg-4 mt-3">
+              <label class="form-label" for="state">From<span class="text-danger">*</span>
+              </label>
+              <select class="form-select" formControlName="state">
+                <option selected>--- State ---</option>
+                <option value="Daman">Daman</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="UP">UP</option>
+              </select>
+            </div>
+            <div class="col-lg-4 mt-3">
+              <label class="form-label " for="city">To<span class="text-danger">*</span> </label>
+              <select class="form-select" formControlName="city">
+                <option selected>--- City ---</option>
+                <option value="Daman">Daman</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="UP">UP</option>
+              </select>
+            </div>
+            <div class="col-lg-4">
+              <!-- Hardware and Equipments details input -->
+              <div class="form-outline mt-5">
+                <input type="text" id="sdetails" class="form-control " placeholder="Enter no. of class per month* "
+                  formControlName="sdetails" />
+              </div>
+            </div>
 
-                    </div>
-                </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6  mt-2">
+              <div class="mt-2">
+                <label class="form-label" for="state">Classes Type<span class="text-danger">*</span>
+                </label>
+                <select class="form-select" formControlName="state">
+                  <option selected>Select Classes Type</option>
+                  <option value="Daman">Daman</option>
+                  <option value="Gujarat">Gujarat</option>
+                  <option value="UP">UP</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <!-- Hardware and Equipments details input -->
+              <div class="form-outline mt-5">
+                <input type="text" id="sdetails" class="form-control " placeholder="Enter no. of class per month* "
+                  formControlName="sdetails" />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 mt-2 ">
+              <label class="form-label " for="city">Address<span class="text-danger">*</span> </label>
+              <div class="form-outline ">
+                <input type="textarea" id="sdetails" class="form-control " placeholder="Enter no. of class per month* "
+                  formControlName="sdetails" />
+              </div>
+            </div>
+            <div class="col-lg-6">
 
             </div>
-        </form>
+          </div>
+        </div>
 
-    </div>
+        <div class="row">
+          <div class="col-lg-12 my-4">
+            <div class="d-flex justify-content-center align-items-cente mt-3">
+              <div class="text-center text-lg-start">
+                <button type="submit" class="btn btn-success ">Submit</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </form>
+
+  </div>
 </section>

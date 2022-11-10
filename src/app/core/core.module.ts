@@ -11,6 +11,7 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatCardModule } from '@angular/material/card';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -26,10 +27,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     CommonModule,
     OverlayModule,
     RouterModule,
-    MatDatepickerModule,
-    MatCardModule,
-    MatNativeDateModule,
-    MatFormFieldModule,
+    ReactiveFormsModule
+
 
   ],
   exports: [HeaderComponent, RegistrationComponent, LoginComponent]
